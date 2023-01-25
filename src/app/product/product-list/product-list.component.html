@@ -1,0 +1,11 @@
+<div class="prodcuts">
+    <div class="item" *ngFor="let p of products">
+        <p><strong>Name: </strong> {{ p.name }}</p>
+        <p><strong>Quantity: </strong> {{ p.quantity }}</p>
+        <p><strong>Price: </strong> {{ p.price }}</p>
+        <button (click)="show(p.id)">Shoz details</button>
+        <hr>
+        <br>
+        <br>
+    </div>
+</div>
